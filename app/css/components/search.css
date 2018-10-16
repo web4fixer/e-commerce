@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
-        url('../fonts/Roboto-Medium.woff') format('woff');
+    src: url('../../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../../fonts/Roboto-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .search_bg {
-	background: url(../img/banner_image.jpg);
+	background: url(../../img/banner_image.jpg);
 	padding-top: 61px; 
 	padding-bottom: 69px;
 }
