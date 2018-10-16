@@ -1,4 +1,63 @@
-footer {
-	padding: 100px;
-	background-color: blue;
+.footer {
+	padding: 115px 0 75px 0;
+	background: #263238;
+	color: #fff;
+}
+.footer__subtitle {
+	position: relative;
+	margin-bottom: 60px;
+}
+.footer__subtitle:after {
+	content: "";
+	width: 50px;
+	height: 3px;
+	background: #8bc34a;
+	position: absolute;
+	top: 50px;
+	left: 0px;	
+}
+.footer__about-text {
+	color: #b7c3c8;
+	font-size: 15px;
+	margin-bottom: 35px;
+}
+.footer__about-address {
+	margin-left: 35px;
+	position: relative;
+}
+.footer__about-address:before {
+	content: url(../../img/geo.png);
+	position: absolute;
+	top: 3px;
+	left: -34px;
+}
+.footer__about-phone {
+	position: relative;
+	margin-left: 35px;
+}
+.footer__about-phone:before {
+	content: url(../../img/phone.png);
+	position: absolute;
+	top: 3px;
+	left: -34px;
+}
+.footer__content a {
+	text-decoration: none;
+	color: #b7c3c8;
+}
+.footer__content ul {
+	padding-left: 14px;
+	line-height: 36px;
+	list-style-image: url(../../img/arrow.png);
+}
+@media (min-width: 992px) {
+	.footer__help {
+	padding-left: 90px;
+	}
+	.footer__join {
+	padding-left: 43px;
+	}
+}
+.mrg {
+	margin-bottom: 20px;
 }
