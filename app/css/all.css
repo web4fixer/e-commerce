@@ -568,6 +568,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   background-color: #263238;
+  padding: 0;
 }
 
 .navbar-desing .navbar-toggler {
