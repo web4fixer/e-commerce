@@ -26,7 +26,9 @@ gulp.task('scripts', function() {
 
 gulp.task('concat-css', function () {
   return gulp.src([
+    'app/css/libs/*.css',
         'app/css/reset.css',
+        'app/css/main.css',
         'app/css/components/*.css',
         'app/css/assets/*.css'
     ])
