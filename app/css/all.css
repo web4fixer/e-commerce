@@ -2,6 +2,11 @@ body,
 html {
   margin: 0;
 }
+
+ul,
+ol {
+  list-style-type: none;
+}
 acide {
   color: red;
 }
@@ -563,6 +568,15 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   background-color: #263238;
+  padding: 0;
+}
+
+.navbar-desing .navbar-toggler {
+  z-index: 2;
+}
+
+.navbar-desing .navbar-collapse {
+  z-index: 1;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -592,7 +606,7 @@ body {
   .navbar-nav {
     margin-top: 35px;
     text-align: center;
-    background-color: rgba(38, 50, 56, 0.5);
+    background-color: rgba(38, 50, 56, 0.8);
   }
 
   .navbar-nav li {
