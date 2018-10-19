@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -34,12 +42,13 @@ body {
 	padding: 34px 39px 80px 39px;
 }
 
-/*.column-right h4 {
+.column-right h4 {
 	margin: 0;
 	font-weight: 500;
 	font-size: 24px;
+	line-height: 60px;
 	color: #263238;
-}*/
+}
 
 form {
 	display: flex;
@@ -51,7 +60,11 @@ label {
 	display: block;
 	width: 235px;
 	margin: 0;
-	margin-bottom: 50px;
+	font-family: 'Roboto';
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 60px;
+	color: #444444;
 }
 
 .line-form {
@@ -63,6 +76,16 @@ label {
 	margin-bottom: 22px;
 }
 
-.line-form-one {
-	margin-top: 10px;
+.cta {
+	border: none;
+	background-color: #8bc34a;
+	color: #f8fbf6;
+	font-weight: 500;
+	font-size: 15px;
+	padding: 16px 31px 19px 31px;
+	cursor: pointer;
+}
+
+.cta:hover {
+	background-color: orange;
 }
