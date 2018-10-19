@@ -178,13 +178,27 @@
 }
 
 @media (max-width: 960px) {
-	.btn-product-price:hover {
+
+.btn-product-price:hover {
 	width: 95%;
 	height: 95%;
 }
+
 .aside-info {
 	flex-direction: column;
 }
 
+.photo-author {
+	margin: 0 auto;
+	margin-bottom: 10px;
+ }
 
-	}
+.about-author span {
+	text-align: center;
+}
+
+.profile-button {
+	display: block;
+	margin: 0 auto;
+}
+}
