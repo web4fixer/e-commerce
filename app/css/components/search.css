@@ -15,24 +15,23 @@
 }
 
 body {
+	font-family: 'Roboto';
 	margin: 0;
 	padding: 0;
 }
 
 .wrapper {
 	width: 100%;
-	position: relative;
-	overflow: hidden;
 }
+
+/*     SEARCH     */
 
 .search_bg {
 	background: url(../../img/banner_image.jpg);
-	padding-top: 61px; 
-	padding-bottom: 69px;
+	padding: 61px 15px 69px 15px;
 }
 
 .search_bg h3 {
-	font-family: 'Roboto';
 	font-weight: 500;
 	font-style: normal;
 	font-size: 20px;
