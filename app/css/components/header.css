@@ -6,7 +6,13 @@ body {
     vertical-align: baseline;
     background: #ffffff;
     color: #444444;
+    min-width: 320px;
 }
+
+.row-wrapper{ 
+    max-width: 1170px;
+}  
+
 .logo-block {
     margin: 21px 0;
 }
@@ -43,8 +49,17 @@ body {
 
 }
 
-.call-back-block span {
+.call-back-block_red-text {
     color: #e74c3c;
+}
+
+.call-back-block_red-tel {
+    color: #333;
+}
+
+.call-back-block a {
+    color: #333;
+    text-decoration: none;
 }
 
 /*notify bell style*/
@@ -84,6 +99,7 @@ body {
 }
 
 /*notify message style*/
+
 .notify-message {
     position: relative;
 }
@@ -113,7 +129,13 @@ body {
     color: #333333;
 }
 
+/*notify-cart style*/
+.notify-cart-wrapper {
+    margin: auto;
+}
+
 .notify-cart {
+    margin: 0 20px;
     position: relative;
 }
 
@@ -154,7 +176,7 @@ body {
     background: #fff;
 }
 
-.account-name span{
+.account-name span {
     font-size: 14px;
     color: #222222;
     font-weight: bold;
@@ -248,6 +270,12 @@ body {
 /*drop down cart start*/
 .dropdown-cart-img {
     margin: 0 20px;
+    opacity: 1;
+}
+
+.dropdown-cart-img:hover {
+    opacity: 0.6;
+    transition: all 0.5s ease-out;
 }
 
 .dropdown-cart-inform {
@@ -280,36 +308,65 @@ body {
 .dropdown-cart-wrapper {
     width: 100%
 }
+
+.notify-cart:hover>.dropdown-cart-menu {
+    display: block;
+}
+
+.notify-cart:hover>.dropdown-cart-menu>ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+}
+
 /*dropdown account user block*/
 .dropdown-user-menu {
     position: absolute;
     top: 92px;
     left: -145px;
     border: 1px solid #ccc;
-    display: none;  
+    display: none;
     width: 156px;
 }
+
 .dropdown-user-menu ul {
     padding: 0 20px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     overflow: hidden;
 }
+
 .dropdown-user-menu li {
     list-style-type: none;
     padding: 10px 0;
 }
+
 .dropdown-user-menu span {
     font-size: 11px;
 }
+
 .dropdown-user-menu i {
     margin-right: 9px;
     color: #99cc66;
 }
+
 .dropdown-user-menu a {
     text-decoration: none;
     color: #333;
 }
+
+.buttons-wrapper {
+    display: flex;
+    align-content: center;
+}
+
+.buttons {
+    display: flex;
+    margin: auto;
+}
+
 .red-cart-btn {
     width: 46.24%;
     min-height: 35px;
@@ -343,13 +400,14 @@ body {
     border: 1px solid #99cc66;
     transition: all 0.5s ease-out;
 }
+
 /*for login button style*/
 .login-btn {
     margin-right: 7px;
     text-align: center;
-    color: #ffff; 
+    color: #ffff;
     padding: 8px 20px 9px;
-    background-color:#99cc33 ; 
+    background-color: #99cc33;
     text-transform: capitalize;
     border-radius: 4px;
     font-size: 12px;
@@ -365,20 +423,21 @@ body {
 }
 
 .login-btn:hover {
-    background-color:#ffff;
-    color: #99cc33; 
-    border-color:#99cc33; 
+    background-color: #ffff;
+    color: #99cc33;
+    border-color: #99cc33;
     text-decoration: none;
     transition: all 0.3s ease-out;
 }
+
 /*logout button style*/
 .logout-btn,
 .register-btn {
     margin-right: 7px;
     text-align: center;
-    color: #ffff; 
+    color: #ffff;
     padding: 8px 20px 9px;
-    background-color:#ff3333 ; 
+    background-color: #ff3333;
     text-transform: capitalize;
     border-radius: 4px;
     font-size: 12px;
@@ -394,23 +453,81 @@ body {
 }
 
 .logout-btn:hover {
-    background-color:#ffff;
-    color: #ff3333; 
-    border-color:#ff3333; 
+    background-color: #ffff;
+    color: #ff3333;
+    border-color: #ff3333;
     text-decoration: none;
     transition: all 0.3s ease-out;
 }
+
 /* for header after login*/
 .notify-bell-disabled,
 .notify-message-disabled,
 .user-block-disabled {
     display: none;
 }
+
 .logout-btn,
 .login-btn {
     display: none;
 }
+
 .register-btn-enabled,
-.login-btn-enabled  {
+.login-btn-enabled {
     display: block;
+}
+
+/*for adaptive*/
+.row-wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper {
+    max-width: 1170px; 
+    margin-right: 20px;
+}
+
+.empty-block {
+    display: flex;
+    flex: 1;
+}
+
+.logo- .notify-block {
+    flex: 1;
+    padding: 10px;
+}
+
+@media (min-width: 320px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .notify-cart-wrapper {
+        order: 1;
+    }
+
+    .call-back-block {
+        display: none;
+    }
+
+    .notify-wrapper {
+        margin: auto;
+    }
+
+    .logo-wrapper {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .logo-block {
+        margin: auto;
+        min-width: 140px;
+    }
 }
