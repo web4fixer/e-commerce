@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.scrumbl {
+	width: 100%;
+	height: 100px;
+	background-color: #f4f6f5;
+}
+
+.hero-product-details {
+	background-color: #f4f6f5
+
+}
+
+.item-product-large {
+	border: 1px solid #dcdcdc;
+	background-color: #fff;
+	margin-bottom: 40px;
+}
+
+.product-large {
+	margin: 20px;
+	height: 425px;
+	background-color: #d4d4d4;
+
+}
+.product-description h2 {
+	font-size: 30px;
+	font-family: "Roboto";
+	margin-bottom: 30px;
+}
+.product-description p {
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 2;
+	margin-bottom: 45px;
+}
