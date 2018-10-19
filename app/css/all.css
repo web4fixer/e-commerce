@@ -583,7 +583,7 @@ body {
   color: white;
 }
 
-.header-bottom.nav-link:hover {
+.header-bottom .nav-link:hover {
   background-color: #3d5059;
 }
 
@@ -621,6 +621,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .scrumbl {
@@ -629,8 +631,14 @@ body {
   background-color: #f4f6f5;
 }
 
-.hero-product-details {
+.product-details {
+  font-family: 'Roboto', sans-serif;
   background-color: #f4f6f5;
+}
+
+.hero-product-details {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .item-product-large {
@@ -819,6 +827,20 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .photo-author {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .about-author span {
+    text-align: center;
+  }
+
+  .profile-button {
+    display: block;
+    margin: 0 auto;
   }
 }
 /*     FONTS     */
