@@ -7,9 +7,7 @@ ul,
 ol {
   list-style-type: none;
 }
-acide {
-  color: red;
-}
+
 .footer {
   padding: 115px 0 75px 0;
   background: #263238;
@@ -634,6 +632,7 @@ body {
 .product-details {
   font-family: 'Roboto', sans-serif;
   background-color: #f4f6f5;
+  color: #707070;
 }
 
 .hero-product-details {
@@ -645,18 +644,19 @@ body {
   border: 1px solid #dcdcdc;
   background-color: #fff;
   margin-bottom: 40px;
+  padding: 20px;
 }
 
 .product-large {
-  margin: 20px;
   height: 425px;
   background-color: #d4d4d4;
+  width: 100%;
 }
 
 .product-description h2 {
   font-size: 30px;
-  font-family: "Roboto";
   margin-bottom: 30px;
+  color: #263238;
 }
 
 .product-description p {
@@ -671,6 +671,7 @@ body {
 .aside h4 {
   font-size: 20px;
   font-weight: bold;
+  color: #263238;
 }
 
 .aside-section {
