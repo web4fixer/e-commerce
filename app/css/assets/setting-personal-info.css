@@ -50,7 +50,7 @@ body {
 	color: #263238;
 }
 
-form {
+.input_fields_row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -73,7 +73,6 @@ label {
 	border: 1px solid #dedede;
 	background-color: #f9f9f9;
 	padding: 0 5px;
-	margin-bottom: 22px;
 }
 
 .cta {
