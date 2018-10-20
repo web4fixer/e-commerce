@@ -7,101 +7,6 @@ ul,
 ol {
   list-style-type: none;
 }
-@font-face {
-  font-family: 'robotolight';
-  src: url("../fonts/roboto-light-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-light-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotolight_italic';
-  src: url("../fonts/roboto-lightitalic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-lightitalic-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotomedium';
-  src: url("../fonts/roboto-medium-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-medium-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotomedium_italic';
-  src: url("../fonts/roboto-mediumitalic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-mediumitalic-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotoregular';
-  src: url("../fonts/roboto-regular-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-regular-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotothin';
-  src: url("../fonts/roboto-thin-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-thin-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotothin_italic';
-  src: url("../fonts/roboto-thinitalic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-thinitalic-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotoblack';
-  src: url("../fonts/roboto-black-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-black-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotoblack_italic';
-  src: url("../fonts/roboto-blackitalic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-blackitalic-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotobold';
-  src: url("../fonts/roboto-bold-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-bold-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotobold_italic';
-  src: url("../fonts/roboto-bolditalic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-bolditalic-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'robotoitalic';
-  src: url("../fonts/roboto-italic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-italic-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 acide {
   color: red;
 }
@@ -839,6 +744,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .scrumbl {
@@ -847,8 +754,14 @@ body {
   background-color: #f4f6f5;
 }
 
-.hero-product-details {
+.product-details {
+  font-family: 'Roboto', sans-serif;
   background-color: #f4f6f5;
+}
+
+.hero-product-details {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .item-product-large {
@@ -1038,6 +951,20 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
+  .photo-author {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .about-author span {
+    text-align: center;
+  }
+
+  .profile-button {
+    display: block;
+    margin: 0 auto;
+  }
 }
 /*     FONTS     */
 
@@ -1057,24 +984,23 @@ body {
 }
 
 body {
+  font-family: 'Roboto';
   margin: 0;
   padding: 0;
 }
 
 .wrapper {
   width: 100%;
-  position: relative;
-  overflow: hidden;
 }
+
+/*     SEARCH     */
 
 .search_bg {
   background: url("../img/banner_image.jpg");
-  padding-top: 61px;
-  padding-bottom: 69px;
+  padding: 61px 15px 69px 15px;
 }
 
 .search_bg h3 {
-  font-family: 'Roboto';
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
@@ -1246,3 +1172,109 @@ body {
   display: flex;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.woff2") format('woff2'),
+        url("../fonts/Roboto-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/*     MAIN CONTENT     */
+
+.main_content_bg {
+  background-color: #f4f6f5;
+  padding-top: 101px;
+  padding-bottom: 152px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.column-right {
+  width: 870px;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  padding: 34px 39px 80px 39px;
+}
+
+.column-right h4 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 60px;
+  color: #263238;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  width: 235px;
+  margin: 0;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 60px;
+  color: #444444;
+}
+
+.line-form {
+  width: 540px;
+  height: 40px;
+  border: 1px solid #dedede;
+  background-color: #f9f9f9;
+  padding: 0 5px;
+  margin-bottom: 22px;
+}
+
+.cta {
+  border: none;
+  background-color: #8bc34a;
+  color: #f8fbf6;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 16px 31px 19px 31px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: orange;
+}
