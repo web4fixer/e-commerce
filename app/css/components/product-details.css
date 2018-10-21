@@ -35,6 +35,10 @@
 	width: 100%;
 }
 
+.product-large img {
+	width: 100%;
+}
+
 .product-description h2 {
 	font-size: 30px;
 	margin-bottom: 30px;
@@ -49,8 +53,6 @@
 }
 
 /*---------------------aside---------------------*/
-
-
 
 .aside h4 {
 	font-size: 20px;
@@ -99,8 +101,11 @@
 
 .price-regular {
 	text-align: center;
-	
+}
 
+.price-regular .dropdown-item {
+	text-align: left;
+	white-space: normal;
 }
 
 .button-product-details {
@@ -111,13 +116,14 @@
 
 .btn-product-price {
 	max-width: 208px;
-	height: 50px;
+	min-height: 50px;
 	margin-bottom: 8px;
 	color: #fff;
 	font-size: 16px;
 	font-weight: bold;
 	border-radius: 1px;
 	box-shadow: -2px 2px 7px rgba(0,0,0,0.5);
+	white-space: normal;
 }
 
 .button-product-details .blue {
