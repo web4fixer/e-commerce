@@ -6,22 +6,22 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
-	<link rel="stylesheet" href="css/components/footer.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/all.css">
 </head>
 <body>
 	<div class="footer">
 		<div class="footer__content container">
 			<div class="row">
 				
-					<div class="footer__about mrg col-lg-3 col-md-6">
-						<h4 class="footer__subtitle">About Company</h4>				
-						<p class="footer__about-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.</p>
-						<p class="footer__about-address">PO Box 16122 Collins Street West Victoria 8007 Australia</p>
-						<p class="footer__about-phone">+61 3 8376 6284</p>					
-					</div>
+				<div class="footer__card col-lg-3 col-md-6">
+					<h4 class="footer__subtitle">About Company</h4>				
+					<p class="footer__text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.</p>
+					<p class="footer__address">PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+					<a href="tel:+1234567890"><p class="footer__phone">+61 3 8376 6284</p></a>				
+				</div>
 				
-				<div class="footer__join mrg col-lg-3 col-md-6">
+				<div class="footer__card col-lg-3 col-md-6">
 					<h4 class="footer__subtitle">Join Our Community</h4>
 					<ul>
 						<li><a href="#">Home</a></li>
@@ -31,7 +31,8 @@
 						<li><a href="#">Become an Affiliate</a></li>
 					</ul>									
 				</div>
-				<div class="footer__help mrg col-lg-3 col-md-6">
+
+				<div class="footer__card col-lg-3 col-md-6">
 					<h4 class="footer__subtitle">Need help?</h4>
 					<ul>
 						<li><a href="#">Help Center</a></li>
@@ -41,9 +42,25 @@
 						<li><a href="#">Contact Us</a></li>
 					</ul>									
 				</div>
-				<div class="footer__join mrg col-lg-3 col-md-6">
+
+				<div class="footer__card col-lg-3 col-md-6">
 					<h4 class="footer__subtitle">Follow Us On</h4>
-											
+					<div class="footer-social">
+						<a href="#" class="icon-fs-icon"></a>
+						<a href="#" class="icon-twitter-icon"></a>
+						<a href="#" class="icon-youtube-icon"></a>
+						<a href="#" class="icon-pinterest-icon"></a>
+						<a href="#" class="icon-linkedin"></a>
+					</div>	
+					<h4 class="footer__signup-title">Newsletter Sign Up!</h4>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control footer__input-custom" placeholder="E-mail Address" aria-label="E-mail Address" aria-describedby="button-addon2">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary footer__btn-custom" type="button" id="button-addon2">
+								<img src="img/send-mail.png" alt="send">
+							</button>
+						</div>
+					</div>				
 				</div>
 			</div>
 		</div>

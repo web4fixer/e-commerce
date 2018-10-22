@@ -3,9 +3,13 @@
 	background: #263238;
 	color: #fff;
 }
+.footer__content a:hover {
+	color: #fff;
+}
 .footer__subtitle {
 	position: relative;
-	margin-bottom: 60px;
+	padding-bottom: 22px;
+	margin-bottom: 38px;
 }
 .footer__subtitle:after {
 	content: "";
@@ -13,29 +17,30 @@
 	height: 3px;
 	background: #8bc34a;
 	position: absolute;
-	top: 50px;
+	bottom: 0;
 	left: 0px;	
 }
-.footer__about-text {
+.footer__text {
 	color: #b7c3c8;
 	font-size: 15px;
 	margin-bottom: 35px;
 }
-.footer__about-address {
+.footer__address {
 	margin-left: 35px;
 	position: relative;
 }
-.footer__about-address:before {
+.footer__address:before {
 	content: url(../../img/geo.png);
 	position: absolute;
 	top: 3px;
 	left: -34px;
 }
-.footer__about-phone {
+.footer__phone {
 	position: relative;
 	margin-left: 35px;
+	color: #fff;
 }
-.footer__about-phone:before {
+.footer__phone:before {
 	content: url(../../img/phone.png);
 	position: absolute;
 	top: 3px;
@@ -50,14 +55,38 @@
 	line-height: 36px;
 	list-style-image: url(../../img/arrow.png);
 }
-@media (min-width: 992px) {
-	.footer__help {
-	padding-left: 90px;
-	}
-	.footer__join {
-	padding-left: 43px;
-	}
+.footer-social {
+	margin-bottom: 40px;
 }
-.mrg {
+.footer-social a {
+	display: inline-block;
+	margin-right: 4px;
+}
+.footer-social a:hover {
+	filter: saturate(3);
+}
+.footer__signup-title {
+	font-weight: 400;
+	font-size: 20px;
 	margin-bottom: 20px;
+}
+.footer__input-custom {
+	background: #2f3c43;
+	border-radius: 0;
+	border: none;
+	box-shadow: inset 1px 1px 0px #000;
+	outline: none;
+	max-width: 220px;
+}
+.footer__btn-custom {
+	background: #8bc34a;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	box-shadow: inset 0px 1px 0px #000;
+}
+@media (max-width: 992px) {
+	.footer__card {
+	margin-bottom: 20px;
+	}
 }

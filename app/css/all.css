@@ -7,18 +7,116 @@ ul,
 ol {
   list-style-type: none;
 }
-acide {
-  color: red;
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-light-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'robotolight_italic';
+  src: url("../fonts/roboto-lightitalic-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-lightitalic-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url("../fonts/roboto-medium-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-medium-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium_italic';
+  src: url("../fonts/roboto-mediumitalic-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-mediumitalic-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-regular-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotothin';
+  src: url("../fonts/roboto-thin-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-thin-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotothin_italic';
+  src: url("../fonts/roboto-thinitalic-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-thinitalic-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoblack';
+  src: url("../fonts/roboto-black-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-black-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoblack_italic';
+  src: url("../fonts/roboto-blackitalic-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-blackitalic-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/roboto-bold-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-bold-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold_italic';
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-bolditalic-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoitalic';
+  src: url("../fonts/roboto-italic-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-italic-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .footer {
   padding: 115px 0 75px 0;
   background: #263238;
   color: #fff;
 }
 
+.footer__content a:hover {
+  color: #fff;
+}
+
 .footer__subtitle {
   position: relative;
-  margin-bottom: 60px;
+  padding-bottom: 22px;
+  margin-bottom: 38px;
 }
 
 .footer__subtitle:after {
@@ -27,34 +125,35 @@ acide {
   height: 3px;
   background: #8bc34a;
   position: absolute;
-  top: 50px;
+  bottom: 0;
   left: 0px;
 }
 
-.footer__about-text {
+.footer__text {
   color: #b7c3c8;
   font-size: 15px;
   margin-bottom: 35px;
 }
 
-.footer__about-address {
+.footer__address {
   margin-left: 35px;
   position: relative;
 }
 
-.footer__about-address:before {
+.footer__address:before {
   content: url("../img/geo.png");
   position: absolute;
   top: 3px;
   left: -34px;
 }
 
-.footer__about-phone {
+.footer__phone {
   position: relative;
   margin-left: 35px;
+  color: #fff;
 }
 
-.footer__about-phone:before {
+.footer__phone:before {
   content: url("../img/phone.png");
   position: absolute;
   top: 3px;
@@ -72,18 +171,49 @@ acide {
   list-style-image: url("../img/arrow.png");
 }
 
-@media (min-width: 992px) {
-  .footer__help {
-    padding-left: 90px;
-  }
-
-  .footer__join {
-    padding-left: 43px;
-  }
+.footer-social {
+  margin-bottom: 40px;
 }
 
-.mrg {
+.footer-social a {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.footer-social a:hover {
+  -webkit-filter: saturate(3);
+  filter: saturate(3);
+}
+
+.footer__signup-title {
+  font-weight: 400;
+  font-size: 20px;
   margin-bottom: 20px;
+}
+
+.footer__input-custom {
+  background: #2f3c43;
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: inset 1px 1px 0px #000;
+  box-shadow: inset 1px 1px 0px #000;
+  outline: none;
+  max-width: 220px;
+}
+
+.footer__btn-custom {
+  background: #8bc34a;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-box-shadow: inset 0px 1px 0px #000;
+  box-shadow: inset 0px 1px 0px #000;
+}
+
+@media (max-width: 992px) {
+  .footer__card {
+    margin-bottom: 20px;
+  }
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -706,7 +836,7 @@ body {
   color: white;
 }
 
-.header-bottom.nav-link:hover {
+.header-bottom .nav-link:hover {
   background-color: #3d5059;
 }
 
@@ -757,6 +887,7 @@ body {
 .product-details {
   font-family: 'Roboto', sans-serif;
   background-color: #f4f6f5;
+  color: #707070;
 }
 
 .hero-product-details {
@@ -768,18 +899,19 @@ body {
   border: 1px solid #dcdcdc;
   background-color: #fff;
   margin-bottom: 40px;
+  padding: 20px;
 }
 
 .product-large {
-  margin: 20px;
   height: 425px;
   background-color: #d4d4d4;
+  width: 100%;
 }
 
 .product-description h2 {
   font-size: 30px;
-  font-family: "Roboto";
   margin-bottom: 30px;
+  color: #263238;
 }
 
 .product-description p {
@@ -794,11 +926,12 @@ body {
 .aside h4 {
   font-size: 20px;
   font-weight: bold;
+  color: #263238;
 }
 
 .aside-section {
   border: 1px solid #dcdcdc;
-  padding: 25px 25px 0 15px;
+  padding: 30px;
   background-color: #fff;
   margin-bottom: 30px;
 }
@@ -838,6 +971,10 @@ body {
   color: #8bc34a;
 }
 
+.price-regular {
+  text-align: center;
+}
+
 .button-product-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,10 +998,6 @@ body {
   border-radius: 1px;
   -webkit-box-shadow: -2px 2px 7px rgba(0,0,0,0.5);
   box-shadow: -2px 2px 7px rgba(0,0,0,0.5);
-  -webkit-transition-property: width;
-  transition-property: width;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
 }
 
 .button-product-details .blue {
@@ -879,13 +1012,12 @@ body {
 
 .button-product-details .grey {
   background-color: #546e7a;
-  margin-bottom: 30px;
 }
 
 .button-product-details .grey:hover {
   background-color: #fff;
   color: #546e7a;
-  border: 3px solid  #546e7a;
+  border: 3px solid #546e7a;
 }
 
 .button-product-details .green {
@@ -901,11 +1033,6 @@ body {
 .fas,
 .far {
   margin-right: 8px;
-}
-
-.btn-product-price:hover {
-  width: 190px;
-  height: 45px;
 }
 
 .dropdown-item:hover {
@@ -1070,6 +1197,59 @@ body {
     height: 35px;
   }
 }
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+
+.icon-fs-icon {
+  background-image: url("../img/sprite.png");
+  background-position: 0px 0px;
+  width: 28px;
+  height: 28px;
+}
+
+.icon-linkedin {
+  background-image: url("../img/sprite.png");
+  background-position: -28px 0px;
+  width: 28px;
+  height: 28px;
+}
+
+.icon-pinterest-icon {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -28px;
+  width: 28px;
+  height: 28px;
+}
+
+.icon-twitter-icon {
+  background-image: url("../img/sprite.png");
+  background-position: -28px -28px;
+  width: 28px;
+  height: 28px;
+}
+
+.icon-youtube-icon {
+  background-image: url("../img/sprite.png");
+  background-position: -56px 0px;
+  width: 28px;
+  height: 28px;
+}
 
 @font-face {
   font-family: 'robotolight';
@@ -1226,13 +1406,14 @@ body {
 
 .column-right h4 {
   margin: 0;
+  padding-bottom: 25px;
   font-weight: 500;
   font-size: 24px;
-  line-height: 60px;
   color: #263238;
+  border-bottom: 1px solid #dcdcdc;
 }
 
-form {
+.input_fields_row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1243,26 +1424,31 @@ form {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-bottom: 22px;
 }
 
-label {
-  display: block;
-  width: 235px;
+.input_fields_row-top {
+  padding-top: 34px;
+}
+
+.label-form-s_p_i {
+  max-width: 235px;
+  width: 100%;
   margin: 0;
   font-family: 'Roboto';
   font-weight: normal;
   font-size: 15px;
-  line-height: 60px;
   color: #444444;
+  padding-top: 10px;
 }
 
 .line-form {
-  width: 540px;
+  max-width: 540px;
+  width: 100%;
   height: 40px;
   border: 1px solid #dedede;
   background-color: #f9f9f9;
   padding: 0 5px;
-  margin-bottom: 22px;
 }
 
 .cta {
