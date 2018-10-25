@@ -17,16 +17,23 @@ gulp.task('browser-sync', function() {
 // concat js
 
 gulp.task('scripts', function() {
-  return gulp.src('app/js/libs/*.js')
+  return gulp.src([
+  'app/js/libs/jquery-3.3.1.min.js',
+  'app/js/libs/owl.carousel.min.js',
+  'app/js/libs/jquery.mixitup.js',
+  'app/js/libs/popper.min.js',
+  'app/js/libs/bootstrap.min.js',
+  'app/js/libs/common.js'
+  ])
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('app/js/'));
+    .pipe(gulp.dest('app/js/build/'));
 });
 
 // concat css
 
 gulp.task('concat-css', function () {
   return gulp.src([
-    'app/css/libs/*.css',
+        'app/css/libs/*.css',
         'app/css/reset.css',
         'app/css/main.css',
         'app/css/components/*.css',
