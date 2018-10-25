@@ -4,6 +4,8 @@ var concat = require('gulp-concat');
 var concatCss = require('gulp-concat-css');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
+var spritesmith = require('gulp.spritesmith');
+var merge = require ('merge-stream');
 
 // Static server
 gulp.task('browser-sync', function() {
@@ -32,6 +34,7 @@ gulp.task('scripts', function() {
 // concat css
 
 gulp.task('concat-css', function () {
+
   return gulp.src([
         'app/css/libs/*.css',
         'app/css/reset.css',
@@ -47,13 +50,31 @@ gulp.task('concat-css', function () {
     .pipe(gulp.dest('app/css/'));
 });
 
+// sprites
 
+gulp.task('sprite', function () {
+    let spriteData = gulp.src('app/img/icons/*.png')
+        .pipe(spritesmith({
+            imgName: 'sprite.png',
+            cssName: 'sprite.css',
+            imgPath: '../../img/sprite.png'
+        }));
 
-gulp.task('watch', ['browser-sync', 'scripts', 'concat-css'], function() {
-	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/css/**/*.css', browserSync.reload);
-	gulp.watch('app/js/**/*.js', browserSync.reload);
-	gulp.watch('app/css/**/*.css', ['concat-css']);
+    let imgStream = spriteData.img
+        .pipe(gulp.dest('app/img'));
+
+    let cssStream = spriteData.css
+        .pipe(gulp.dest('app/css/components/'));
+    return merge(imgStream, cssStream);
+})
+
+// gulp watch
+gulp.task('watch', ['browser-sync', 'scripts', 'concat-css', 'sprite'], function() {
+    gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/css/**/*.css', browserSync.reload);
+    gulp.watch('app/js/**/*.js', browserSync.reload);
+    gulp.watch('app/css/**/*.css', ['concat-css']);
+    gulp.watch('app/img/icons/*.png', ['sprite']);
 });
 
 gulp.task('default', ['watch']);

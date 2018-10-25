@@ -175,8 +175,8 @@
 	margin: 0 6px;
     outline: none;
 }
+
 .btn-newest:hover {
-    outline: none;
 	background-color: #99cc33;
 	color: #fff;
 	transition: all 0.5s ease-out;
@@ -188,6 +188,7 @@
 .btn-newest:visited {
     outline: none;
 }
+
 @media screen and (min-width:320px) and (max-width:1600px) {
 
 .item-profile {
@@ -341,5 +342,4 @@
 .author-button {
     margin: 10px 10px;
 }
-
 }
