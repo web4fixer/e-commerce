@@ -20,11 +20,15 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scripts', function() {
   return gulp.src([
-        'app/js/libs/jquery-3.3.1.min.js',
-        'app/js/libs/bootstrap.min.js'
-    ])
+  'app/js/libs/jquery-3.3.1.min.js',
+  'app/js/libs/owl.carousel.min.js',
+  'app/js/libs/jquery.mixitup.js',
+  'app/js/libs/popper.min.js',
+  'app/js/libs/bootstrap.min.js',
+  'app/js/libs/common.js'
+  ])
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('app/js/'));
+    .pipe(gulp.dest('app/js/build/'));
 });
 
 // concat css

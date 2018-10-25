@@ -13,37 +13,38 @@
 </head>
 
 <body>
- <header>
-   <div class="header-top">
-        <div class="container">
-            <div class="row row-wrapper">
-                <div class="logo-wrapper" >
-                    <div class="logo-block">
-                        <a href="index.html">
+    <header>
+        <div class="header-top">
+            <div class="header-top-center">
+                <div class="container header-top-container">
+                    <div class="logo-wrapper">
+                        <div class="logo-block">
+                            <a href="index.html">
                             <img src="img/logo.png" alt="logo" title="Foxtar">
                         </a>
-                     </div>
-                </div>
-            <div class="empty-block"></div>
-                    <!-- notify section -->
-            <div class="notify-wrapper">
-                <div class="notify-block">
+                        </div>
+                    </div>
                     <div class="call-back-block">
                         <div>
                             <span class="call-back-block_red-text">Need help?</span>
                             <span>Talk to an expert:</span>
-                                <a href="#" class="call-back-block_red-tel">+61 3 8376 6284</a>
+                            <a href="tel:+61383766284" class="call-back-block_red-tel">+61383766284</a>
                         </div>
                     </div>
-                    <div class="notify-bell notify-bell-disabled">
-                        <a href="#">
-                            <i class="far fa-bell"></i>
-                            <span>8</span>
+                    <!-- notify section -->
+                    <div class="notify-wrapper">
+                        <div class="notify-bell-wrapper">
+                            <div class="dropdown">
+                                <a href="#" role="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       		<div class="notify-bell">
+                         
+                            	<i class="far fa-bell"></i>
+                            	<span>8</span>
+                        	</div>
                         </a>
-                                    <!-- dropdown menu notify bell -->
-                     <div class="dropdown-notify-menu">
-                        <ul>
-                            <li>
+                                <!-- dropdown menu notify bell -->
+                                <div class="dropdown-menu" aria-labelledby="">
+                                    <a class="dropdown-item" href="#">
                                 <!-- first item -->
                                 <div class="dropdown-item-wrapper">
                                         <div class="dropdown-notification-img">
@@ -57,9 +58,10 @@
                                         <i class="far fa-bell"></i>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
-                            <!-- second item -->
+                            </a>
+                                    <!-- second item -->
+                                    <a class="dropdown-item" href="#">
+
                                 <div class="dropdown-item-wrapper">
                                     <div class="dropdown-notification-img">
                                         <img src="img/account-img.png">
@@ -72,8 +74,8 @@
                                             <i class="far fa-bell"></i>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </a>
+                                    <a class="dropdown-item" href="#">
                              <!-- third item -->
                                 <div class="dropdown-item-wrapper">
                                     <div class="dropdown-notification-img">
@@ -87,21 +89,22 @@
                                         <i class="far fa-bell"></i>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                    </div>
-                            
-                    <div class="notify-message-wrapper">
-                        <div class="notify-message notify-message-disabled">
-                            <a href="#"><i class="far fa-envelope"></i>
-                                <span>5</span>
                             </a>
-                    <!-- dropdown menu notify message -->
-                        <div class="dropdown-message-menu">
-                            <ul>
-                                <li>
-                            <!-- first item -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notify-message-wrapper">
+                            <div class="dropdown">
+															<a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																<div class="notify-message notify-message-disabled">
+																	<i class="far fa-envelope"></i>
+																	<span>5</span>
+																</div>
+															</a>
+                                <!-- dropdown menu notify message -->
+                                <div class="dropdown-menu" aria-labelledby="">
+                                    <!-- first item -->
+                                    <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-wrapper">
                                         <div class="dropdown-message-img">
                                             <img src="img/account-img.png">
@@ -115,9 +118,9 @@
                                             <i class="far fa-envelope"></i>
                                         </div>
                                     </div>
-                                </li>
-                                <li>
-                            <!-- second item -->
+                                </a>
+                                    <!-- second item -->
+                                    <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-wrapper">
                                         <div class="dropdown-message-img">
                                              <img src="img/account-img.png">
@@ -131,9 +134,9 @@
                                             <i class="far fa-envelope"></i>
                                         </div>
                                     </div>
-                                </li>
-                                <li>
-                            <!-- third item -->
+                                </a>
+                                    <!-- third item -->
+                                    <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-wrapper">
                                         <div class="dropdown-message-img">
                                             <img src="img/account-img.png">
@@ -147,21 +150,21 @@
                                             <i class="far fa-envelope"></i>
                                         </div>
                                     </div>
-                                </li>
-                                    </ul>
-                                    </div>
+                                </a>
                                 </div>
-                    </div>
-                    <div class="notify-cart-wrapper">
-                        <div class="notify-cart">
-                            <a href="#" data-placement="bottom" data-toggle="cart">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span>8</span>
+                            </div>
+                        </div>
+                        <div class="notify-cart-wrapper">
+                            <div class="dropdown">
+                                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           		<div class="notify-cart"> 	
+                            		<i class="fas fa-shopping-cart"></i>
+                            		<span>8</span>
+                            	</div>
                             </a>
-                        <!-- dropdown cart menu start-->
-                            <div class="dropdown-cart-menu">
-                                <ul class="notify-cart">
-                                    <li>
+                                <!-- dropdown cart menu start-->
+                                <div class="dropdown-menu" aria-labelledby="">
+                                    <a class="dropdown-item" href="#">
                             <!-- first item -->
                                         <div class="dropdown-item-wrapper">
                                             <div class="dropdown-cart-img">
@@ -173,9 +176,9 @@
                                                 <span>&#36;59</span>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li>
-                            <!-- second item -->
+                                    </a>
+                                    <!-- second item -->
+                                    <a class="dropdown-item" href="#">
                                         <div class="dropdown-item-wrapper">
                                             <div class="dropdown-cart-img">
                                                 <img src="img/dropdown-cart-img.png">
@@ -186,9 +189,9 @@
                                                 <span>&#36;59</span>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li>
-                            <!-- third item -->
+                                    </a>
+                                    <!-- third item -->
+                                    <a class="dropdown-item" href="#">
                                         <div class="dropdown-item-wrapper">
                                             <div class="dropdown-cart-wrapper">
                                                 <div class="dropdown-cart-price">
@@ -201,88 +204,65 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
-                                    <!-- dropdown card menu end -->
-                                </div>  
-                            </div>
-                                <!-- account user block  -->
-                                <div class="container account-user-block user-block-disabled">
-                                    <div class="row account-user-block-row" data-placement="bottom" data-toggle="user-menu">
+                                    </a>
+                                </div>
+                            </div> <!-- dropdown card menu end -->
+                        </div>
+                    </div>
+                    <!-- account user block  -->
+                    <div class="account-user-block-wrapper">
+                        <div class="account-user-block user-block-disabled">
+                            <div class="dropdown">
+                                <div class="row account-user-block-row">
+                                    <a href="#" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <div class="account-img">
                                             <img src="img/account-img.png">
                                         </div>
-                                            <div class="account-info">
-                                                <div class="account-name">
-                                                    <span>Mike Hussi</span>
-                                                </div>
-                                                <div class="account-balance">
-                                                    <span>&#36;171.00</span>
-                                                </div>
-                                            </div>
-                                            <div class="account-dropdown">
-                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                            </div>
-                                            <!-- dropdown user menu start -->
-                            <div class="dropdown-user-menu-wrapper">
-                                <div class=" dropdown-user-menu">
-                                    <ul>
-                                        <li>
-                                            <a href="">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Profile Page</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Portfolio</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Account Setings</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Downloads</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Wishlist</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Upload Item</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Statement</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Withdraws</span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                          <div class="account-info">
+                                              <span class="account-name"> Mike Hussi<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                              <span class="account-balance">&#36;171.00</span>
+                                          </div>
+                                    </a>
+                                    <!-- dropdown user menu start -->
+                                    <div class="dropdown-menu dropdown-user-menu" aria-labelledby="">
+                                        <a class="dropdown-item" href="#">
+                                          <i class="fas fa-angle-right"></i>
+                                          <span>Profile Page</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                          <i class="fas fa-angle-right"></i>
+                                          <span>Portfolio</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                          <i class="fas fa-angle-right"></i>
+                                          <span>Account Setings</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                          <i class="fas fa-angle-right"></i>
+                                          <span>Downloads</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                          <i class="fas fa-angle-right"></i>
+                                          <span>Wishlist</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                          <i class="fas fa-angle-right"></i>
+                                          <span>Upload Item</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                          <i class="fas fa-angle-right"></i>
+                                          <span>Statement</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                          <i class="fas fa-angle-right"></i>
+                                          <span>Withdraws</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="buttons-wrapper">
-                        <div class="buttons">
+                        <div class="buttons-wrapper">
+                            <div class="buttons">
                                 <a class="login-btn login-btn-enabled " id="login-button" href="#" title="login">
                                     <span>Login</span>
                                 </a>
@@ -297,59 +277,58 @@
                                 <!-- login button -->
                                 <a class="login-btn" id="login-button" href="#" title="login">
                                     <span>Login</span>
-                                </a>                              
+                                </a>
+                            </div>
                         </div>
-                </div>
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
-<!-- header bottom start -->
+        </div>
+        </div>
+        <!-- header bottom start -->
         <div class="header-bottom">
-
-                <nav class="navbar navbar-expand-lg navbar-dark navbar-desing" style="background-color: #263238;">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                   <a class="nav-link nav-link-desing" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">WordPress</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Joomla</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">PSD</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Plugins</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Components</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pages</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Help</a>
-                  </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-desing" style="background-color: #263238;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link-desing" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WordPress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Joomla</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PSD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Plugins</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
                 </div>
-                </nav>
-
+            </nav>
         </div>
     </header>
-
     <div class="wrapper">
         <div class="search_bg">
             <h3>Premium WordPress Themes, Web Templates and Many More ...</h3>
@@ -361,51 +340,657 @@
             </div>
         </div>
     </div>
-
-
-
-    <div class="footer">
-        <div class="footer__content container">
-            <div class="row">
-                
-                    <div class="footer__about mrg col-lg-3 col-md-6">
-                        <h4 class="footer__subtitle">About Company</h4>             
-                        <p class="footer__about-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.</p>
-                        <p class="footer__about-address">PO Box 16122 Collins Street West Victoria 8007 Australia</p>
-                        <p class="footer__about-phone">+61 3 8376 6284</p>                  
-                    </div>
-                
-                <div class="footer__join mrg col-lg-3 col-md-6">
-                    <h4 class="footer__subtitle">Join Our Community</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Forums</a></li>
-                        <li><a href="#">Become an Author</a></li>
-                        <li><a href="#">Community Meetups</a></li>
-                        <li><a href="#">Become an Affiliate</a></li>
-                    </ul>                                   
+    <!-- newest products area start -->
+    <div class="newest-products-area bg-newest-products section-space">
+        <div class="container">
+            <h2 class="title-default">Let's Check Out Our Newest Release Prodcuts</h2>
+            <div class="container-fluid">
+                <div class="controls controls-btn-box">
+                    <button class="filter" data-filter="all">All</button>
+                    <button class="filter" data-filter=".category-1">WordPress</button>
+                    <button class="filter" data-filter=".category-2">Joomla</button>
+                    <button class="filter" data-filter=".category-3">Plugins</button>
+                    <button class="filter" data-filter=".category-4">Component</button>
+                    <button class="filter" data-filter=".category-2">PSD</button>
                 </div>
-                <div class="footer__help mrg col-lg-3 col-md-6">
-                    <h4 class="footer__subtitle">Need help?</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Foxtar Market Terms</a></li>
-                        <li><a href="#">Author Terms</a></li>
-                        <li><a href="#">Foxtar Licenses</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>                                   
-                </div>
-                <div class="footer__join mrg col-lg-3 col-md-6">
-                    <h4 class="footer__subtitle">Follow Us On</h4>
-                                            
-                </div>
+                <div class="row" id="container-mix">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="single-item-grid mix category-1" data-myorder="1">
+                            <div class="item-img">
+                                <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-info">
+                                        <h3><a href="#">Responsive Mobile App</a></h3>
+                                        <span>Site Template</span>
+                                        <div class="price">$19</div>
+                                    </div>
+                                    <div class="item-profile">
+                                        <div class="profile-title">
+                                            <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                                                <span>Radiustheme</span>
+                                            </div>
+                                            <div class="profile-rating">
+                                                <ul>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li>(<span> 05</span> )</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="single-item-grid mix category-3" data-myorder="2">
+                                    <div class="item-img">
+                                        <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+                                        <div class="trending-sign" data-tips="Trending"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-info">
+                                            <h3><a href="#">The Post Grid Pro</a></h3>
+                                            <span>WordPress Plugin</span>
+                                            <div class="price">$15</div>
+                                        </div>
+                                        <div class="item-profile">
+                                            <div class="profile-title">
+                                                <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                                                    <span>PsdBosS</span>
+                                                </div>
+                                                <div class="profile-rating">
+                                                    <ul>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        <li>(<span> 05</span> )</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="single-item-grid mix category-3" data-myorder="3">
+                                        <div class="item-img">
+                                            <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+                                </div>
+                                            <div class="item-content">
+                                                <div class="item-info">
+                                                    <h3><a href="#">Food Menu</a></h3>
+                                                    <span>WordPress Plugin</span>
+                                                    <div class="price">$20</div>
+                                                </div>
+                                                <div class="item-profile">
+                                                    <div class="profile-title">
+                                                        <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                                                            <span>Manilip</span>
+                                                        </div>
+                                                        <div class="profile-rating">
+                                                            <ul>
+                                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                <li>(<span> 05</span> )</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
+                                            <div class="single-item-grid mix category-1" data-myorder="4">
+                                                <div class="item-img">
+                                                  <img src="img/newest_products.jpg" alt="product" class="img-responsive"> </div>
+                                                    <div class="item-content">
+                                                        <div class="item-info">
+                                                            <h3><a href="#">Imac Mocup</a></h3>
+                                                            <span>Psd Template</span>
+                                                            <div class="price">$12</div>
+                                                        </div>
+                                                        <div class="item-profile">
+                                                            <div class="profile-title">
+                                                                <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                                                                    <span>Lolypop</span>
+                                                                </div>
+                                                                <div class="profile-rating">
+                                                                    <ul>
+                                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                        <li>(<span> 05</span> )</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                    <div class="single-item-grid mix category-2" data-myorder="5">
+                                                        <div class="item-img">
+                                                            <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+                                </div>
+                                                            <div class="item-content">
+                                                                <div class="item-info">
+                                                                    <h3><a href="#">Gymedge</a></h3>
+                                                                    <span>Joomla Template</span>
+                                                                    <div class="price">$45</div>
+                                                                </div>
+                                                                <div class="item-profile">
+                                                                    <div class="profile-title">
+                                                                        <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                                                                            <span>Micrsof</span>
+                                                                        </div>
+                                                                        <div class="profile-rating">
+                                                                            <ul>
+                                                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                <li>(<span> 05</span> )</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
+                                                            <div class="single-item-grid mix category-1" data-myorder="6">
+                                                                <div class="item-img">
+                                                                    <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+                                </div>
+                                                                    <div class="item-content">
+                                                                        <div class="item-info">
+                                                                            <h3><a href="#">The Post Grid Pro</a></h3>
+                                                                            <span>Wordpress Plugin</span>
+                                                                            <div class="price">$19</div>
+                                                                        </div>
+                                                                        <div class="item-profile">
+                                                                            <div class="profile-title">
+                                                                                <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                                                                                    <span>Raklouse</span>
+                                                                                </div>
+                                                                                <div class="profile-rating">
+                                                                                    <ul>
+                                                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                        <li>(<span> 05</span> )</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                                    <div class="single-item-grid mix category-1" data-myorder="7">
+                                                                        <div class="item-img">
+                                                                            <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+                                                                            <div class="trending-sign" data-tips="Trending"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+                                                                        </div>
+                                                                        <div class="item-content">
+                                                                            <div class="item-info">
+                                                                                <h3><a href="#">Doll Face</a></h3>
+                                                                                <span>Illustration</span>
+                                                                                <div class="price">$10</div>
+                                                                            </div>
+                                                                            <div class="item-profile">
+                                                                                <div class="profile-title">
+                                                                                    <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                                                                                        <span>Mikc Art</span>
+                                                                                    </div>
+                                                                                    <div class="profile-rating">
+                                                                                        <ul>
+                                                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                            <li>(<span> 05</span> )</li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
+                                                                        <div class="single-item-grid mix category-3" data-myorder="8">
+                                                                            <div class="item-img">
+                                                                                <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+                                </div>
+                                                                                <div class="item-content">
+                                                                                    <div class="item-info">
+                                                                                        <h3><a href="#">Designer Mockup</a></h3>
+                                                                                        <span>Psd Template</span>
+                                                                                        <div class="price">$10</div>
+                                                                                    </div>
+                                                                                    <div class="item-profile">
+                                                                                        <div class="profile-title">
+                                                                                            <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                                                                                                <span>ThemeLol</span>
+                                                                                            </div>
+                                                                                            <div class="profile-rating">
+                                                                                                <ul>
+                                                                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                                                    <li>(<span> 05</span> )</li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- buttons newest area here-->
+                  <div class="container newest-buttons-wrapper">
+                      <div class="btn-area">
+                          <button class="btn btn-primary btn-lg btn-newest">All New Items</button>
+                          <button class="btn btn-primary btn-lg btn-newest">Popular Items</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+<!-- trending section start here  -->
+<div class="trending-products-area section-space-default">
+<div class="container">
+<h2 class="title-default">This Week Trending Products</h2>
+</div>
+<div class="container-fluid">
+<div class="owl-carousel trending-slide-wrapper">
+<!-- first slide owl carousel -->
+<div class="single-item-grid">
+<div class="item-img">
+<img src="img/newest_products.jpg" alt="product" class="img-responsive">
+<div class="trending-sign" data-tips="Trending"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+</div>
+<div class="item-content">
+<div class="item-info">
+<h3><a href="#">Responsive Template</a></h3>
+<span>Site Template</span>
+<div class="price">$19</div>
+</div>
+<div class="item-profile">
+<div class="profile-title">
+<div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+<span>Radiustheme</span>
+</div>
+<div class="profile-rating">
+<ul>
+  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+  <li>(<span> 05</span> )</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- second slide owl carousel -->
+<div class="single-item-grid">
+<div class="item-img">
+<img src="img/newest_products.jpg" alt="product" class="img-responsive">
+<div class="trending-sign" data-tips="Trending"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+</div>
+<div class="item-content">
+<div class="item-info">
+<h3><a href="#">The Post Grid Pro</a></h3>
+<span>Wordpress Plugin</span>
+<div class="price">$15</div>
+</div>
+<div class="item-profile">
+<div class="profile-title">
+<div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+  <span>PsdBoss</span>
+</div>
+<div class="profile-rating">
+  <ul>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+      <li>(<span> 05</span> )</li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+<!-- third slide owl carousel -->
+<div class="single-item-grid">
+<div class="item-img">
+<img src="img/newest_products.jpg" alt="product" class="img-responsive">
+<div class="trending-sign" data-tips="Trending"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+</div>
+<div class="item-content">
+<div class="item-info">
+<h3><a href="#">Logo Showcae</a></h3>
+<span>Joomla Component</span>
+<div class="price">$20</div>
+</div>
+<div class="item-profile">
+<div class="profile-title">
+  <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+      <span>Manilip</span>
+  </div>
+  <div class="profile-rating">
+      <ul>
+          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+          <li>(<span> 05</span> )</li>
+      </ul>
+  </div>
+</div>
+</div>
+</div>
+<!-- fourth slide owl carousel -->
+<div class="single-item-grid">
+<div class="item-img">
+<img src="img/newest_products.jpg" alt="product" class="img-responsive">
+<div class="trending-sign" data-tips="Trending"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+</div>
+<div class="item-content">
+<div class="item-info">
+  <h3><a href="#">UI Design</a></h3>
+  <span>Psd Template</span>
+  <div class="price">$12</div>
+</div>
+<div class="item-profile">
+  <div class="profile-title">
+      <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+          <span>LolyPop</span>
+      </div>
+      <div class="profile-rating">
+          <ul>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li>(<span> 05</span> )</li>
+          </ul>
+      </div>
+  </div>
+</div>
+</div>
+<!-- fifth slide owl carousel cloned slides -->
+<div class="single-item-grid">
+<div class="item-img">
+  <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+  <div class="trending-sign" data-tips="Trending"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+</div>
+<div class="item-content">
+  <div class="item-info">
+      <h3><a href="#">Responsive Template</a></h3>
+      <span>Site Template</span>
+      <div class="price">$19</div>
+  </div>
+  <div class="item-profile">
+      <div class="profile-title">
+          <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+              <span>Radiustheme</span>
+          </div>
+          <div class="profile-rating">
+              <ul>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                  <li>(<span> 05</span> )</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- second slide owl carousel -->
+<div class="single-item-grid">
+  <div class="item-img">
+      <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+      <div class="trending-sign" data-tips="Trending"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+  </div>
+  <div class="item-content">
+      <div class="item-info">
+          <h3><a href="#">The Post Grid Pro</a></h3>
+          <span>Wordpress Plugin</span>
+          <div class="price">$15</div>
+      </div>
+      <div class="item-profile">
+          <div class="profile-title">
+              <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                  <span>PsdBoss</span>
+              </div>
+              <div class="profile-rating">
+                  <ul>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                      <li>(<span> 05</span> )</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- third slide owl carousel -->
+  <div class="single-item-grid">
+      <div class="item-img">
+          <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+          <div class="trending-sign" data-tips="Trending"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+      </div>
+      <div class="item-content">
+          <div class="item-info">
+              <h3><a href="#">Logo Showcae</a></h3>
+              <span>Joomla Component</span>
+              <div class="price">$20</div>
+          </div>
+          <div class="item-profile">
+              <div class="profile-title">
+                  <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                      <span>Manilip</span>
+                  </div>
+                  <div class="profile-rating">
+                      <ul>
+                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                          <li>(<span> 05</span> )</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- fourth slide owl carousel -->
+      <div class="single-item-grid">
+          <div class="item-img">
+              <img src="img/newest_products.jpg" alt="product" class="img-responsive">
+              <div class="trending-sign" data-tips="Trending"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+          </div>
+          <div class="item-content">
+              <div class="item-info">
+                  <h3><a href="#">UI Design</a></h3>
+                  <span>Psd Template</span>
+                  <div class="price">$12</div>
+              </div>
+              <div class="item-profile">
+                  <div class="profile-title">
+                      <div class="img-wrapper"><img src="img/account-img.png" alt="profile" class="img-circle"></div>
+                          <span>LolyPop</span>
+                      </div>
+                      <div class="profile-rating">
+                          <ul>
+                              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                              <li>(<span> 05</span> )</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="why-choose-area bg-prime-text section-space-default">
+<div class="container">
+	<h2 class="title-text-prime">Why You Choose Foxtar Market Place?</h2>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="choose-item">
+				<a class="item-circle" href="#"></a>
+				<h3><a href="#">Easily Buy & Sell </a></h3>
+				<p>Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="choose-item">
+				<a class="item-circle" href="#"></a>
+				<h3><a href="#">Quality Products</a></h3>
+				<p>Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="choose-item">
+				<a class="item-circle" href="#"></a>
+				<h3><a href="#">100% Secure Payment</a></h3>
+				<p>Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+	<!-- section author starting here ! -->
+	<div class="author-area bg-newest-products section-space">
+		<div class="container author-bg-wrapper">
+			<div class="author-block">
+				<div class="author-text">
+					<h3>Over <span>20000</span> Author Are Involved Here!</h3>
+				</div>
+			<div class="author-button">
+				<button>Become A Author</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- section tutorials start here ! -->
+<div class="tutorials-area section-space-default">
+	<div class="container">
+		<h2 class="title-default">Free Monthly Tutorials To Help You With Your Project</h2>
+	</div>
+	 <div class="container">
+	 	<div class="row">
+	 		<!-- first item -->
+	 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	 			<div class="tutorials-item">
+	 				<a href="#" alt="tutorial">
+	 					<img class="flexible-img" src="img/tutorials-item-bg.jpg">
+	 				</a>
+	 				<div class="tutorials-title">
+	 					<a href="">
+	 						<h3>Web Design Tutorials</h3>
+	 					</a>
+	 			</div>
+	 			</div>
+	 		</div>
+	 		<!-- second item -->
+	 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	 			<div class="tutorials-item">
+	 				<a href="#"alt="tutorial">
+	 					<img class="flexible-img" src="img/tutorials-item-bg.jpg">
+	 				</a>
+	 				<div class="tutorials-title">
+	 					<a href="">
+	 						<h3>WordPress Tutorials</h3>
+	 					</a>
+	 			</div>
+	 			</div>
+	 		</div>
+	 		<!-- third item -->
+	 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	 			<div class="tutorials-item">
+	 			<a href="#"alt="tutorial">
+	 					<img class="flexible-img" src="img/tutorials-item-bg.jpg">
+	 				</a>
+	 				<div class="tutorials-title">
+	 					<a href="">
+	 						<h3>HTML & CSS Tutorials</h3>
+	 					</a>
+	 			</div>
+	 			</div>
+	 		</div>
+	 	</div>
+	 </div>
+</div>
+<!-- footer section start here -->
+<div class="footer">
+    <div class="footer__content container">
+        <div class="row">
+            <div class="footer__about mrg col-lg-3 col-md-6">
+                <h4 class="footer__subtitle">About Company</h4>
+                <p class="footer__about-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.</p>
+                <p class="footer__about-address">PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+                <p class="footer__about-phone">+61 3 8376 6284</p>
+            </div>
+            <div class="footer__join mrg col-lg-3 col-md-6">
+                <h4 class="footer__subtitle">Join Our Community</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Become an Author</a></li>
+                    <li><a href="#">Community Meetups</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer__help mrg col-lg-3 col-md-6">
+                <h4 class="footer__subtitle">Need help?</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Foxtar Market Terms</a></li>
+                    <li><a href="#">Author Terms</a></li>
+                    <li><a href="#">Foxtar Licenses</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__join mrg col-lg-3 col-md-6">
+                <h4 class="footer__subtitle">Follow Us On</h4>
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/libs/popper.min.js" type="text/javascript"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/common.js"></script>
-    <script type="text/javascript" src="js/all.js"></script>
+</div>
+
+<!--  <script src="js/libs/jquery-3.3.1.min.js"></script>
+<script src="js/libs/jquery.mixitup.js"></script>
+<script src="js/libs/owl.carousel.min.js"></script>
+<script src="js/libs/popper.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/common.js"></script> -->
+<script src="js/build/all.js"></script>
 
 </html>

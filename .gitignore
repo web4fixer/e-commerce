@@ -4,3 +4,4 @@ package-lock
 
 app/js/all
 
+app/js/build/*
