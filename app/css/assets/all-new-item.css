@@ -19,7 +19,7 @@ a:hover {
 	content: '-';
 }
 
-/*---start-card-section----*/
+/*---start view menu----*/
 .ani-btn, .ani-btn:hover {
 	background: none;
 	color: #000;
@@ -51,6 +51,7 @@ a:hover {
 .ani-card-area {
 	display: flex;
 	flex-wrap: wrap;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 .select-panel {
@@ -58,6 +59,7 @@ a:hover {
 	background: #fff;
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	border: solid 1px #d4d4d4;
 	margin-bottom: 30px;
@@ -69,58 +71,147 @@ a:hover {
 .select-view-icon i:hover {
 	color: #8bc34a;
 }
-.ani-card-custom {
-	
-}
-.ani-card-custom .card-body {
-	border-top: solid 1px #d4d4d4;
-}
-.ani-card-title-wrap {
-	display: flex;
-	justify-content: space-between;
-	margin: 0;
-}
-.ani-card-title {
-}
-.ani-card-price {
+/*end view menu*/
+
+/*start card*/
+.ani-card {
+	margin-bottom: 30px;
+	background: #fff;
 
 }
-.ani-card-text-custom {
-	color: #8bc34a;
-	font-size: 14px;
-}
-.ani-card-body-custom {
+.ani-card-flex {
 	display: flex;
+}
+.ani-card-block {
+	display: block;
+}
+.ani-card:hover {
+	box-shadow: 2px 10px 30px #d4d4d4;
+}
+.ani-card-img {
+	
+}
+.ani-card-img-fix-width {
+	width: 100%;
+}
+.ani-card-img-ver-width {
+	max-width: 100%;
+}
+.ani-card .card-content {
+	width: 100%;
+	padding: 20px 0px;
+}
+.ani-card .card-title-sect {
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-bottom: 20px;
+	padding: 0 30px;
 }
-.ani-card-author {
-	display: flex;
+.ani-card .card-titles {
+
 }
-.ani-card-author .card-link {
-	color: #546e7a;
-	align-self: center;
-	font-size: 14px;
+.ani-card .card-title {
 	font-weight: 500;
 }
-.ani-card-circle {
+.ani-card .card-title-m0 {
+	margin: 0;
+}
+.ani-card .card-title-m10 {
+	margin: 10px 0;
+}
+.ani-card .card-subtitle a {
+	color: #8bc34a;
+}
+.ani-card .card-price {
+	font-weight: bold;
+	margin: 0;
+}
+.ani-card .card-price-fs30 {
+	font-size: 30px;
+}
+.ani-card .card-price-fs20 {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.ani-card .card-desc-sect {
+	
+	justify-content: space-between;
+	padding: 0 30px;
+}
+.ani-card .card-description {
+	font-size: 14px;
+	color: #70838d;
+	margin: 0;
+}
+.ani-card .card-sales {
+	font-size: 13px;
+	color: #aeb4bb;
+}
+.ani-card .card-info {
+	padding: 20px 30px 0 30px;
+	border-top: 1px solid #e7ecf2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.ani-card .info-author {
+	display: flex;
+	flex-wrap: wrap;
+}
+.ani-card .author-circle {
 	width: 30px;
 	height: 30px;
+	background: url(../../img/demo-card.png) 50% 50% / cover no-repeat;
 	border-radius: 50%;
-	background: url(../../img/demo-card.png) 27% 100% / cover no-repeat;
 	margin-right: 10px;
 }
-.ani-rating {
-	display: flex;
+.ani-card .author-name {
+	color: #546e7a;
 	align-self: center;
 }
-.ani-rating-stars {
-	color: #ffa726;
+.ani-card .info-communication {
+	display: flex;
+	flex-wrap: wrap;
+}
+.ani-card .rating {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 10px;
+}
+.ani-card .rating-stars {
 	letter-spacing: -6px;
-	margin-right: 5px;
+	color: #ffa726;
+	margin-right: 10px;
+	cursor: pointer;
 }
-.ani-rating-hooks {
-	color: #c0cbd1;
+.ani-card .hooks {
+	color: #aeb4bb;
 }
-.ani-rating-value {
+.ani-card .rating-num {
 	color: #000;
 }
+.ani-card .comments {	
+	padding: 0 20px;
+	border-right: 1px solid #e7ecf2;
+	border-left: 1px solid #e7ecf2;
+}
+.ani-card .comments a {
+	color: #8bc34a;
+}
+.ani-card .likes {
+	padding-left: 20px;
+	
+}
+.ani-card .likes a {
+	color: #8bc34a;
+}
+.ani-card .visible {
+	display: block;
+}
+.ani-card .invisible {
+	display: none;
+}
+/*end card*/
+
