@@ -28,7 +28,7 @@ body {
 	padding-bottom: 152px;
 }
 
-.container {
+.left_and_right_column {
 	max-width: 1170px;
 	margin: 0 auto;
 	display: flex;
@@ -41,7 +41,7 @@ body {
 	width: 100%;
 	background-color: #fff; 
 	border: 1px solid #dcdcdc;
-	padding: 34px 39px 80px 39px;
+	padding: 21px 39px 80px 39px;
 }
 
 .column-right h4 {
@@ -59,11 +59,15 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 22px;
+	margin-bottom: 21px;
 }
 
 .input_fields_row-top {
 	padding-top: 34px;
+}
+
+.input_fields_row:last-child {
+	margin-bottom: 0;
 }
 
 .label-form-s_p_i {
@@ -84,6 +88,15 @@ body {
 	border: 1px solid #dedede;
 	background-color: #f9f9f9;
 	padding: 0 5px;
+}
+
+.input-row_with_button {
+	max-width: 540px;
+  width: 100%;
+}
+
+.line-form_with_button {
+	margin-bottom: 25px;
 }
 
 .cta {
@@ -118,6 +131,7 @@ ul {
 }
 
 .setting-menu-row {
+	height: 50px;
 	list-style: none;
 	padding: 19px;
 	border-bottom: 1px solid #d7d7d7;
@@ -140,7 +154,7 @@ ul {
 	cursor: pointer;
 }
 
-.fa-angle-right {
+.arrow-right-in-left-column {
 	padding-right: 23px;
 	font-size: 9px;
 	color: #444444;
@@ -159,7 +173,7 @@ ul {
 		padding-top: 40px;
 	}
 
-	.container {
+	.left_and_right_column {
 		flex-wrap: wrap;
 	}
 
