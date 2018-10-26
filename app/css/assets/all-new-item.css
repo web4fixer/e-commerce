@@ -1,0 +1,28 @@
+.ani-wrap {
+	background: #f4f6f5;
+	padding: 45px 0 105px 0;
+}
+.breadcrumb__ani-custom {
+	background: #f4f6f5;
+	margin-bottom: 45px;
+}
+.breadcrumb__ani-custom .breadcrumb-item a {
+	color: #b0bec5;
+}
+.breadcrumb__ani-custom .active {
+	color: #000;
+}
+.breadcrumb__ani-custom .active:before {
+	content: '-';
+}
+
+/*---start-card-section----*/
+
+.select-panel {
+	padding: 20px;
+	background: #fff;
+	width: 100%;
+}
+.card__ani-custom {
+	margin-top: 30px;
+}

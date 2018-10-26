@@ -28,13 +28,13 @@ body {
 	padding-bottom: 152px;
 }
 
-.container {
+/*.container {
 	max-width: 1170px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-}
+}*/
 
 .column-right {
 	max-width: 870px;
