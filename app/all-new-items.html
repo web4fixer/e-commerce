@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/all.css">
 </head>
@@ -26,49 +27,56 @@
 					
 				</div>
 				<div class="col-9">
-					<div class="ani-card-section">
-						<div class="row">
-							<div class="select-panel">
-								<div class="btn-group" role="group" aria-label="Button group with nested dropdown">							   
-									<div class="btn-group" role="group">
-									    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									      Dropdown
-									    </button>
-									   	 	<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-										        <a class="dropdown-item" href="#">Dropdown link</a>
-										        <a class="dropdown-item" href="#">Dropdown link</a>
-									   	 	</div>
-									</div>
-								</div>
+					<div class="select-panel">
+						<div class="btn-group" role="group" aria-label="Button group with nested dropdown">							   
+							<div class="btn-group btn-group-custom" role="group">
+							    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle ani-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							      Sort by: New Items
+							    </button>
+							   	 	<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+								        <a class="dropdown-item" href="#">Dropdown link</a>
+								        <a class="dropdown-item" href="#">Dropdown link</a>
+							   	 	</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-4">
-								<div class="card card__ani-custom">
-								    <img class="card-img-top" src="img/demo-card.png" alt="card-image">
-								    <div class="card-body">
-								        <h5 class="card-title">Card title</h5>
-								        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								    </div>
-								    <div class="card-body">
-								        <a href="#" class="card-link">Card link</a>
-								        <a href="#" class="card-link">Another link</a>
-								    </div>
-								</div>
-							</div>
-							<div class="col-4">
-								
-							</div>
-							<div class="col-4">
-								
+						<div class="select-view-icon">
+							<i class="fas fa-th-large"></i>
+							<i class="fas fa-th-large"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<div class="card ani-card-custom">
+							  <img class="card-img-top" src="img/demo-card.png" alt="card-image">
+							  <div class="card-body">
+							    <div class="card-title ani-card-title-wrap">
+							   	 <span class="ani-card-title h6">Card title</span><span class="ani-card-price h5">&#36;59</span>
+							  	</div>
+							    <a href="#" class="card-text ani-card-text-custom">WordPress</a>
+							  </div>
+							  <div class="card-body ani-card-body-custom">
+									<div class="ani-card-author">
+								  	<div class="ani-card-circle"></div>
+								    <a href="#" class="card-link">PsdBosS</a>
+									</div>
+									<div class="ani-rating">
+										<div class="ani-rating-stars">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<span class="ani-rating-hooks">(<span class="ani-rating-value">05</span>)</span>
+									</div>
+							  </div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	
+			</div> <!-- end row -->	
+		</div><!--  end container -->
+	</div> <!-- end ani-wrap -->
 
 
 

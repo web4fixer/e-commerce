@@ -2057,6 +2057,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 28px;
   height: 28px;
 }
+a:hover {
+  text-decoration: none;
+}
+
 .ani-wrap {
   background: #f4f6f5;
   padding: 45px 0 105px 0;
@@ -2081,14 +2085,151 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 /*---start-card-section----*/
 
-.select-panel {
-  padding: 20px;
-  background: #fff;
-  width: 100%;
+.ani-btn,
+.ani-btn:hover {
+  background: none;
+  color: #000;
+  border: none;
 }
 
-.card__ani-custom {
-  margin-top: 30px;
+.ani-btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-group-custom.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  color: #000;
+}
+
+.ani-btn:after {
+  content: url("../img/dropdown-arrows.png");
+  border: none;
+  vertical-align: -2px;
+  margin-left: 5px;
+}
+
+.ani-btn:before {
+  content: url("../img/view-menu-icon.png");
+  border: none;
+  vertical-align: -2px;
+  margin-right: 5px;
+}
+
+.ani-card-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.select-panel {
+  padding: 10px;
+  background: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: solid 1px #d4d4d4;
+  margin-bottom: 30px;
+}
+
+.select-view-icon i {
+  vertical-align: -6px;
+  cursor: pointer;
+}
+
+.select-view-icon i:hover {
+  color: #8bc34a;
+}
+
+
+
+.ani-card-custom .card-body {
+  border-top: solid 1px #d4d4d4;
+}
+
+.ani-card-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+}
+
+
+
+
+
+.ani-card-text-custom {
+  color: #8bc34a;
+  font-size: 14px;
+}
+
+.ani-card-body-custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.ani-card-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ani-card-author .card-link {
+  color: #546e7a;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ani-card-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url("../img/demo-card.png") 27% 100% / cover no-repeat;
+  margin-right: 10px;
+}
+
+.ani-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.ani-rating-stars {
+  color: #ffa726;
+  letter-spacing: -6px;
+  margin-right: 5px;
+}
+
+.ani-rating-hooks {
+  color: #c0cbd1;
+}
+
+.ani-rating-value {
+  color: #000;
 }
 @font-face {
   font-family: 'robotolight';
