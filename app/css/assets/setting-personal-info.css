@@ -133,8 +133,8 @@ ul {
 .setting-menu-row {
 	height: 50px;
 	list-style: none;
-	padding: 19px;
 	border-bottom: 1px solid #d7d7d7;
+	position: relative;
 }
 
 .setting-menu-row:last-child {
@@ -145,19 +145,27 @@ ul {
 	border-bottom: 2px solid #8bc34a;
 }
 
+.setting-menu-row:hover .arrow-right-in-left-column {
+	color: #8bc34a;
+	transform: translateX(3px);
+	transition: .3s;
+}
 
 .settings-menu {
 	text-decoration: none;
 	color: #707070;
 	font-weight: 500;
 	font-size: 14px;
+	display: block;
+	padding: 19px 50px;
 	cursor: pointer;
 }
 
 .arrow-right-in-left-column {
-	padding-right: 23px;
+	padding: 20px 23px;
 	font-size: 9px;
 	color: #444444;
+	position: absolute;
 }
 
 
@@ -178,9 +186,29 @@ ul {
 	}
 
 	.column-left {
-		margin: 0 auto;
+		max-width: 100%;
 		margin-bottom: 20px;
+		border: none;
+		background: none;
 	}
+
+	.column-left ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.setting-menu-row {
+		width: 50%;
+		border-bottom: none;
+	}
+
+	.setting-menu-row:hover {
+		border-bottom: none;
+	}
+
+.settings-menu {
+	padding: 15px 40px;
+}
 
 	.input_fields_row {
 		flex-wrap: wrap;
