@@ -345,6 +345,7 @@
 }
 
 }
+
 /*slider dots owl carousel*/
 .owl-theme .owl-controls .owl-page {
     display: inline-block;
@@ -358,3 +359,17 @@
     opacity: 0.5;
     width: 12px;
 }
+/*slider dots owl carousel*/
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-dot span {
+    height: 16px !important;
+    width: 16px !important;
+}
+.owl-dot span:hover {
+    background-color: #8bc34a !important;
+}
+.active>span{
+    background-color: #8bc34a !important;
+} 

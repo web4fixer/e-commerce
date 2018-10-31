@@ -491,11 +491,11 @@ body {
 
 .register-btn-enabled,
 .login-btn-enabled {
-    display: block;
+    display: none;
 }
 
 .login-btn-enabled {
-    display: none;
+    display: block;
 }
 
 /*for adaptive*/
@@ -506,4 +506,147 @@ body {
 .logo .notify-block {
     flex: 1;
     padding: 10px;
+}
+
+
+/*login form style here*/
+.login-form {
+    cursor: default;
+
+    z-index: 999999999;
+    min-width: 600px;
+    text-align: left;
+    background: #8bc34a;
+    border: 1px solid #bdbdbd;
+    padding: 50px 100px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-style: none;
+}
+
+.modal-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-body {
+    position: static;
+}
+
+.login-form input {
+    background: #76ae36;
+    height: 44px;
+    padding: 0 15px;
+    border-radius: 0;
+    border: none;
+    margin: 0 auto 20px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.login-form-btn-wrapper {
+    display: flex;
+}
+
+.login-form input {
+    padding: 0 40px;
+    position: relative;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+.form-control:focus {
+    color: #fff;
+    background-color: #76ae36;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.form-control i {
+    color: #fff;
+}
+
+.name-user-img {
+    position: absolute;
+    z-index: 999;
+    top: 183px;
+    left: 128px;
+    color: #fff;
+
+}
+
+.pass-lock-img {
+    position: absolute;
+    z-index: 999;
+    top: 247px;
+    left: 129px;
+    color: #fff;
+}
+
+.login-form .btn-login {
+    margin-right: 12px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    color: #333333;
+    display: inline-block;
+    padding: 19px 44px;
+    transition: all 0.3s ease-out 0s;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form .create-login-btn {
+    background-color: #76ae36;
+    color: #fff;
+    padding: 15px 24px;
+    cursor: pointer;
+}
+
+.login-form .create-login-btn i {
+    margin-right: 4px;
+}
+
+.login-form .cross-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #ffffff;
+    background: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.lost-password {
+    color: #fff;
 }
