@@ -5,19 +5,88 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
 </head>
 <body>
 	<div class="wrapper">
+		<!--      HEADER      -->
+
+		<!--      SEARCH      -->
 		<div class="search_bg">
 			<h3>Premium WordPress Themes, Web Templates and Many More ...</h3>
-			<div class="search">
-				<form action="#" method="post" name="searchform">
-					<input type="text" name="srchinput" placeholder="Search Your Keywords . . ." class="srchinput">
-					<button class="srchbutton"><img src="img/search_button.png" alt="search"></button>
-				</form>
+			<form action="#" method="post" name="searchform" class="form-srch">
+				<input type="search" name="srchinput" placeholder="Search Your Keywords . . ." class="srchinput">
+				<input type="submit" class="srchbutton" value="" alt="search">
+			</form>
+		</div>
+		<!--      MAIN CONTENT      -->
+		<div class="main_content_bg">
+			<div class="left_and_right_column">
+				<div class="column-left">
+					<ul>
+						<li class="setting-menu-row"><i class="fas fa-angle-right arrow-right-in-left-column"></i><a href="#" class="settings-menu">Personal Information</a></li>
+						<li class="setting-menu-row"><i class="fas fa-angle-right arrow-right-in-left-column"></i><a href="#" class="settings-menu">Profile</a></li>
+						<li class="setting-menu-row"><i class="fas fa-angle-right arrow-right-in-left-column"></i><a href="#" class="settings-menu">Badges</a></li>
+						<li class="setting-menu-row"><i class="fas fa-angle-right arrow-right-in-left-column"></i><a href="#" class="settings-menu">E-mail Settings</a></li>
+						<li class="setting-menu-row"><i class="fas fa-angle-right arrow-right-in-left-column"></i><a href="#" class="settings-menu">Social Network</a></li>
+					</ul>
+				</div>
+				<div class="column-right">
+					<h4>Personal Information</h4>
+					<form action="#" method="post">
+						<div class="input_fields_row input_fields_row-top">
+							<label for="first_name" class="label-form-s_p_i">First Name</label>
+							<input type="text" name="first name" id="first_name" class="line-form">
+						</div>
+						<div class="input_fields_row">
+							<label for="last_name" class="label-form-s_p_i">Last Name</label>
+							<input type="text" name="last name" id="last_name" class="line-form">
+						</div>
+						<div class="input_fields_row">
+							<label for="company" class="label-form-s_p_i">Company Name</label>
+							<input type="text" name="company" id="company" class="line-form">
+						</div>
+						<div class="input_fields_row">
+							<label for="you_country" class="label-form-s_p_i">Country</label>
+							<select name="drop-down list" id="you_country" class="line-form">
+								<option value="Select Your Country">Select Your Country</option>
+								<option value="Ukraine">Ukraine</option>
+								<option value="USA">USA</option>
+								<option value="Russia">Russia</option>
+								<option value="Armenia">Armenia</option>
+								<option value="Spain">Spain</option>
+								<option value="Italy">Italy</option>
+							</select>
+						</div>
+						<div class="input_fields_row">
+							<label for="address line1" class="label-form-s_p_i">Address Line 1</label>
+							<input type="text" name="address line" id="address line1" class="line-form">
+						</div>
+						<div class="input_fields_row">
+							<label for="address line2" class="label-form-s_p_i">Address Line 2</label>
+							<input type="text" name="address line" id="address line2" class="line-form">
+						</div>
+						<div class="input_fields_row">
+							<label for="city" class="label-form-s_p_i">City</label>
+							<input type="text" name="city" id="city" class="line-form">
+						</div>
+						<div class="input_fields_row">
+							<label for="region" class="label-form-s_p_i">State / Province / Region</label>
+							<input type="text" name="region" id="region" class="line-form">
+						</div>
+						<div class="input_fields_row">
+							<label for="postal_code" class="label-form-s_p_i">Zip / Postal Code</label>
+							<div class="input-row_with_button">
+								<input type="text" name="postal_code" id="postal_code" class="line-form line-form_with_button">
+								<input type="submit" value="Update" class="cta">
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
+		<!--      FOOTER      -->
 	</div>
 </body>
 </html>
