@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var spritesmith = require('gulp.spritesmith');
 var merge = require ('merge-stream');
+var cssnano = require ('gulp-cssnano');
 
 // Static server
 gulp.task('browser-sync', function() {
@@ -67,6 +68,41 @@ gulp.task('sprite', function () {
         .pipe(gulp.dest('app/css/components/'));
     return merge(imgStream, cssStream);
 })
+
+//min
+
+gulp.task('css-min', function() {
+    return gulp.src('app/css/all.css')
+    .pipe(cssnano())
+    .pipe(gulp.dest('app/css/'))
+});
+
+
+//build
+gulp.task('build', ['css-min'], function() {
+    var buildCss = gulp.src([
+            'app/css/reset.css',
+            'app/css/main.css',
+            'app/css/all.css'
+        ])
+    .pipe(gulp.dest('dist/css'));
+
+    var buildFonts = gulp.src('app/fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'));
+
+    var buildImg = gulp.src('app/img/**/*')
+    .pipe(gulp.dest('dist/img'));
+
+    var buildJs = gulp.src([
+            'app/js/build/all.js',
+            'app/js/common.js'
+        ])
+    .pipe(gulp.dest('dist/js'));
+
+    var buildHtml = gulp.src('app/*.html')
+    .pipe(gulp.dest('dist'));
+
+});
 
 // gulp watch
 gulp.task('watch', ['browser-sync', 'scripts', 'concat-css', 'sprite'], function() {
