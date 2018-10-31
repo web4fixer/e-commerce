@@ -177,6 +177,7 @@
 }
 
 .btn-newest:hover {
+    outline: none;
 	background-color: #99cc33;
 	color: #fff;
 	transition: all 0.5s ease-out;
@@ -342,4 +343,18 @@
 .author-button {
     margin: 10px 10px;
 }
+
+}
+/*slider dots owl carousel*/
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
 }
