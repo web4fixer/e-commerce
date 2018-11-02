@@ -8,11 +8,17 @@
 	background-color: #263238; 
 	height: 60px;
 	position: relative;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.wrapper-header-bottom {
+	background-color: #263238; 
 }
 
 .navbar-desing {
-	max-width: 1170px;
-	margin: 0 auto;
+	max-width: 675px;
+	position: relative;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	background-color: #263238; 
