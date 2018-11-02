@@ -16,10 +16,6 @@
 	margin: 0 auto;
 }
 
-/*.header-bottom-hero {
-	max-width: 675px;
-}*/
-
 .navbar-desing {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
@@ -39,8 +35,8 @@
 	color: white;
 }
 
-.header-bottom .nav-link:hover {
-	background-color: #3d5059;
+.header-bottom .nav-item:hover {
+	background-color: #5a6266;
 }
 
 .header-bottom.nav-link:visited {
@@ -48,7 +44,7 @@
 }
 
 .header-bottom .nav-item {
-	padding: 12px 10px 0 15px;
+	padding: 12px 10px 10px 15px;
 }
 
 

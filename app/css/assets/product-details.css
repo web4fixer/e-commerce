@@ -66,12 +66,6 @@ ul {
 	padding: 20px;
 }
 
-.product-large {
-	height: 425px;
-	background-color: #d4d4d4;
-	width: 100%;
-}
-
 .product-description h2 {
 	font-size: 30px;
 	margin-bottom: 30px;
@@ -473,7 +467,6 @@ ul {
   height: 37px;
 }
 
-
 /*-----------------third aside block----------------------*/
 
 .aside-basket {
@@ -601,7 +594,7 @@ ul {
  		padding: 10px;
  		text-align: center;
  	}
- 	.fa-caret-square-down {
+ 	.btn-product-more {
 		display: inline-block;
 		margin: 10px;
  	}
@@ -628,12 +621,21 @@ ul {
 }
 
 @media (min-width: 320px) and (max-width: 600px){
-
 	.builder-button {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 0;
 	}
 	.product-media {
 		justify-content: center;
+	}
+	.item-product-large {
+		padding: 10px;
+	}
+	.product-description h2 {
+		font-size: 23px;
+	}
+	.tab-pane {
+		padding: 25px 20px;
 	}
 }
