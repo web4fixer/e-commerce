@@ -8,17 +8,19 @@
 	background-color: #263238; 
 	height: 60px;
 	position: relative;
-	max-width: 1170px;
-	margin: 0 auto;
 }
 
 .wrapper-header-bottom {
 	background-color: #263238; 
+	max-width: 1170px;
+	margin: 0 auto;
 }
 
-.navbar-desing {
+/*.header-bottom-hero {
 	max-width: 675px;
-	position: relative;
+}*/
+
+.navbar-desing {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	background-color: #263238; 
@@ -46,7 +48,6 @@
 }
 
 .header-bottom .nav-item {
-	margin-right: 40px;
 	padding: 12px 10px 0 15px;
 }
 
