@@ -206,9 +206,13 @@ ul {
 		border-bottom: none;
 	}
 
-.settings-menu {
-	padding: 15px 40px;
-}
+	.settings-menu {
+	padding: 15px 25px;
+	}
+
+	.arrow-right-in-left-column {
+		padding: 20px 5px;
+	}
 
 	.column-right {
 		padding: 21px 15px 50px 15px;
