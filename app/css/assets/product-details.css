@@ -177,7 +177,7 @@ ul {
  	font-weight: 600;
  }
  
- .tab-content {
+.tab-content {
  	width: 100%;
  	min-height: 265px;
  	border: 1px solid #dfdfdf;
@@ -256,22 +256,41 @@ ul {
 	background-color: #fff;
 }
 
+.item-more-product img:hover {
+	cursor: pointer;
+}
+
 .description-more-product {
 	padding: 15px 15px 5px 15px;
 	background-color: #fff;
 }
 
 .description-more-product h6 {
-	color: #263238;
 	font-size: 14px;
 	margin-bottom: 5px;
 }
 
-.more-product-text {
+.description-more-product h6 a {
+	color: #263238;
+}
+
+.description-more-product h6 a:hover {
 	color: #8bc34a;
+}
+
+.more-product-text {
 	font-size: 12px;
 	display: block;
 	margin-bottom: 3px;
+}
+
+.more-product-text a {
+	text-decoration: none;
+	color: #8bc34a;
+}
+
+.more-product-text a:hover {
+	color: #263238;
 }
 
 .more-product-price {
@@ -524,7 +543,6 @@ ul {
 		justify-content: center;
 	}
 	.item-more-product {
-		width: 260px;
 		align-items: center;
 	}
 	.section-more-product {
