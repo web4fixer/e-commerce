@@ -20,6 +20,11 @@ body {
     margin: 21px 0;
 }
 
+.logo-block img {
+    min-width: 138px !important;
+    min-height: 38px !important;
+}
+
 .notify-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -256,12 +261,27 @@ body {
     left: -172px !important;
 }
 
+.dropdown-menu-notify-bell,
+.dropdown-menu-message,
+.dropdown-notify-cart {
+    width: 266px;
+    position: absolute;
+    transform: translate3d(0px, 55px, 0px) !important;
+    top: 0px;
+    left: 0px;
+}
+
 .dropdown-item-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 88px;
 }
+
+.dropdown-item {
+    padding: 0;
+}
+
 .dropdown-notification-inform span,
 .dropdown-message-inform span,
 .dropdown-cart-inform span,
@@ -350,7 +370,12 @@ body {
     border: 1px solid #ccc;
     display: none;
     width: 156px;
-    transform: translate3d(156px, 34px, 0px) !important;
+    transform: translate3d(180px, 23px, 0px) !important;
+    padding: 19px;
+}
+
+.dropdown-item-user-menu {
+    padding: 5px;
 }
 
 .dropdown-user-menu span {
@@ -538,9 +563,12 @@ body {
 .modal-body {
     position: static;
 }
-.user-name-input-wrap, .pass-input-wrap {
+
+.user-name-input-wrap,
+.pass-input-wrap {
     position: relative;
 }
+
 .login-form input {
     background: #76ae36;
     height: 44px;
@@ -597,7 +625,8 @@ body {
     color: #fff;
 }
 
-.name-user-img, .pass-lock-img {
+.name-user-img,
+.pass-lock-img {
     position: absolute;
     z-index: 999;
     top: 13px;
@@ -643,31 +672,96 @@ body {
 .lost-password {
     color: #fff;
 }
+
 /*modal adaptive style start HERE !!!*/
 @media screen and (min-width: 320px) and (max-width: 576px) {
+    .logo-wrapper {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
 
-.login-form {
-    padding: 0;
-    min-width: 100%;
+    .call-back-block {
+        display: none;
+    }
+
+    .login-form {
+        padding: 0;
+        min-width: 100%;
+    }
+
+    .login-form .btn-login {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 20px 20px;
+    }
+
+    .login-form .create-login-btn {
+        margin-bottom: 10px;
+        padding: 20px 20px;
+    }
 }
-.login-form  .btn-login{
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 20px 20px;
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .notify-wrapper,
+    .account-user-block-wrapper {
+        flex-grow: 1;
+    }
+
+    .dropdown-menu-message {
+        width: 266px;
+        position: absolute;
+        transform: translate3d(45px, 55px, 0px) !important;
+        top: 0px;
+        left: -155px !important;
+    }
+
+    .dropdown-menu-notify-bell {
+        left: -10px !important;
+    }
+
 }
-.login-form  .create-login-btn{
-    margin-bottom: 10px;
-    padding: 20px 20px;
+
+@media screen and (min-width: 320px) and (max-width: 418px) {
+
+    .dropdown-notify-cart {
+        left: -220px !important;
+    }
 }
+@media screen and (min-width: 418px) and (max-width: 575px) {
+
+    .dropdown-menu-message {
+        left: -112px !important;
+    }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .dropdown-notify-cart,
+    .dropdown-menu-message {
+        left: -267px !important;
+    }
+
+    .dropdown-menu-message {
+        left: -133px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .account-user-block-wrapper {
+        flex-grow: 1;
+    }
+}
+
 @media screen and (min-width: 576px) and (max-width: 767px) {
 
-.modal-adaptiv {
-    max-width: 80%;
-    margin:auto;
-}
-.login-form {
-    padding: 0;
-    min-width: 100%;
-}
+    .modal-adaptiv {
+        max-width: 80%;
+        margin: auto;
     }
+
+    .login-form {
+        padding: 0;
+        min-width: 100%;
+    }
+}
